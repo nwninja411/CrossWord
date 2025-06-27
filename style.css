@@ -1,0 +1,95 @@
+@font-face {
+/*Here I am naming my font so that I can refernce it*/
+font-family: 'RingBearer';
+/*Here I am linking my font file so that when I refernce it it knows what the font looks like*/
+src: url('RingbearerMedium-51mgZ.ttf') format('truetype');
+/*these tags let the code know that the style and weight should be normal rather than bold or italic*/
+font-weight: normal; 
+font-style: normal; 
+}
+
+body{
+    background-color: #20271a;
+    color: #dbc7a1;
+    font-family: 'RingBearer', serif;
+    text-align: center;
+}
+
+table, tr{
+    margin: 0 auto; /*one of the ways to encourage your content to be centered */
+    padding: 0;
+    border: 3px solid rgb(61, 46, 32);
+    border-radius: 4px;
+    min-width: 400px;
+}
+
+td{
+    padding: 1px;
+    background-color: #4d331e;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(73, 59, 47);
+    position: relative; /*This will make our numbers appear in the correct spots*/
+}
+
+input{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.281);
+    color: #dbc7a1;
+    font-family: 'RingBearer', serif;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+input:hover{
+    transform: scale(1.11);
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: transform .1s ease,box-shadow .1s ease, text-shadow .1s ease;
+    text-shadow: 2px 2px 5px #585144;
+}
+
+.clue-number{
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    left: 3px;
+    color: #dbc7a1;
+    font-family: serif;
+}
+
+#Clues{
+    display: flex;
+    justify-content: center; /* Centers the columns horizontally */
+    gap: 50px; /* Optional spacing between Across and Down */
+    text-align: left; /* Makes list items align nicely under headers */
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+#Direction{
+    margin-right: -60px;
+}
+
+button{
+    font-family: 'RingBearer', serif;
+    color: #dbc7a1;
+    border-radius: 2px;
+    background-color: #4d331e;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.07);
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: transform .2s ease,box-shadow .2s ease, text-shadow .2s ease;
+    text-shadow: 2px 2px 5px #585144;
+}
